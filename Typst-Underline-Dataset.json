@@ -1,0 +1,194 @@
+[
+  {
+    "input": "What is the auto data type in Typst?",
+    "output": "The auto data type in Typst indicates a smart default. It has exactly one value: auto. Parameters that support the auto value have some smart default or contextual behavior. For example, setting the text direction parameter to auto lets Typst automatically determine the direction from the text language."
+  },
+  {
+    "input": "Can you provide an example using the auto data type?",
+    "output": "Here is an example using the auto data type:\n\n#set text(direction: auto)\nThis text will have its direction automatically determined by Typst based on the text language."
+  },
+  {
+    "input": "What is the bool data type in Typst?",
+    "output": "The bool data type in Typst has two states: true and false. It denotes whether something is active or enabled."
+  },
+  {
+    "input": "Can you give an example using the bool data type?",
+    "output": "Here is an example using the bool data type:\n\n#underline(evade: true)[This text has underline evasion enabled.]"
+  },
+  {
+    "input": "What is the color data type in Typst?",
+    "output": "The color data type in Typst defines a color in a specific color space. Typst supports sRGB, CMYK, D65 Gray, Oklab, OkLch, Linear RGB, HSL, and HSV color spaces. Typst also defines several built-in colors like black, gray, silver, white, navy, blue, and aqua."
+  },
+  {
+    "input": "Can you provide an example using the color data type?",
+    "output": "Here is an example using the color data type:\n\n#rect(fill: aqua)\nThis rectangle is filled with the color aqua."
+  },
+  {
+    "input": "What is the length data type in Typst?",
+    "output": "The length data type in Typst represents a size or distance, possibly expressed with contextual units. Typst supports units like points (pt), millimeters (mm), centimeters (cm), inches (in), and relative to font size (em)."
+  },
+  {
+    "input": "Can you give an example using the length data type?",
+    "output": "Here is an example using the length data type:\n\n#set text(size: 12pt)\nThis text is set to a size of 12 points."
+  },
+  {
+    "input": "How does the underline function in Typst look with default settings?",
+    "output": "The underline function in Typst can be used with default settings as follows:\n\n#underline[This is underlined with default settings.]"
+  },
+  {
+    "input": "Provide an example of the underline function with a red stroke and 2pt offset.",
+    "output": "Here is an example of the underline function with a red stroke and 2pt offset:\n\n#underline(stroke: 1.5pt + red, offset: 2pt)[This is an important note.]"
+  },
+  {
+    "input": "Show how to use the underline function with the auto value for stroke and offset.",
+    "output": "Here is an example of the underline function using the auto value for stroke and offset:\n\n#underline(stroke: auto, offset: auto)[This text has automatic underline settings.]"
+  },
+  {
+    "input": "Give an example of the underline function with evade set to false.",
+    "output": "Here is an example of the underline function with evade set to false:\n\n#underline(evade: false)[This text has underline without evasion.]"
+  },
+  {
+    "input": "Provide an example of the underline function with a blue color stroke.",
+    "output": "Here is an example of the underline function with a blue color stroke:\n\n#underline(stroke: blue)[This text has a blue underline.]"
+  },
+  {
+    "input": "Give an example of the underline function with an offset of 5pt.",
+    "output": "Here is an example of the underline function with an offset of 5pt:\n\n#underline(offset: 5pt)[This text has a 5pt offset underline.]"
+  },
+  {
+    "input": "Provide an example of the underline function with an extent of 3pt.",
+    "output": "Here is an example of the underline function with an extent of 3pt:\n\n#underline(extent: 3pt)[This text has an underline extended by 3pt.]"
+  },
+  {
+    "input": "Show how to use the underline function with background set to true.",
+    "output": "Here is an example of the underline function with background set to true:\n\n#underline(background: true)[This text has an underline behind the text.]"
+  },
+  {
+    "input": "Provide an example of the underline function with a thick green stroke.",
+    "output": "Here is an example of the underline function with a thick green stroke:\n\n#underline(stroke: 3pt + green)[This text has a thick green underline.]"
+  },
+  {
+    "input": "Show how to use the underline function with evade set to true.",
+    "output": "Here is an example of the underline function with evade set to true:\n\n#underline(evade: true)[This text has underline evasion enabled.]"
+  },
+  {
+    "input": "Provide an example of the underline function with a yellow background.",
+    "output": "Here is an example of the underline function with a yellow background:\n\n#underline(background: true, stroke: 1pt + black)[This text has an underline behind the text with a yellow background.]"
+  },
+  {
+    "input": "Give an example of the underline function with length units in points.",
+    "output": "Here is an example of the underline function with length units in points:\n\n#underline(stroke: 2pt + red, offset: 1pt)[This text has a underline with length units in points.]"
+  },
+  {
+    "input": "Provide an example of the underline function with a 4pt offset and a blue stroke.",
+    "output": "Here is an example of the underline function with a 4pt offset and a blue stroke:\n\n#underline(offset: 4pt, stroke: blue)[This text has a 4pt offset and a blue underline.]"
+  },
+  {
+    "input": "Show how to use the underline function with a green stroke and evade set to false.",
+    "output": "Here is an example of the underline function with a green stroke and evade set to false:\n\n#underline(stroke: green, evade: false)[This text has a green underline without evasion.]"
+  },
+  {
+    "input": "Provide an example of the underline function with a 3pt offset and background set to true.",
+    "output": "Here is an example of the underline function with a 3pt offset and background set to true:\n\n#underline(offset: 3pt, background: true)[This text has an underline with a 3pt offset and background.]"
+  },
+  {
+    "input": "Give an example of the underline function with a red stroke and 2pt extent.",
+    "output": "Here is an example of the underline function with a red stroke and 2pt extent:\n\n#underline(stroke: red, extent: 2pt)[This text has a red underline extended by 2pt.]"
+  },
+  {
+    "input": "Provide an example of the underline function with a blue stroke and 1pt offset.",
+    "output": "Here is an example of the underline function with a blue stroke and 1pt offset:\n\n#underline(stroke: blue, offset: 1pt)[This text has a blue underline with 1pt offset.]"
+  },
+  {
+    "input": "Show how to use the underline function with a thick yellow stroke and evade set to true.",
+    "output": "Here is an example of the underline function with a thick yellow stroke and evade set to true:\n\n#underline(stroke: 4pt + yellow, evade: true)[This text has a thick yellow underline with evasion enabled.]"
+  },
+  {
+    "input": "Give an example of the underline function with a green color stroke and 2pt offset.",
+    "output": "Here is an example of the underline function with a green color stroke and 2pt offset:\n\n#underline(stroke: rgb(green), offset: 2pt)[This text has a custom green underline with 2pt offset.]"
+  }
+  {
+    "input": "Provide an example of the underline function with a linear gradient stroke.",
+    "output": "Here is an example of the underline function with a linear gradient stroke:\n\n#underline(stroke: gradient.linear( red,  blue))[This text has a linear gradient underline.]"
+  },
+  {
+    "input": "Give an example of the underline function with a radial gradient stroke.",
+    "output": "Here is an example of the underline function with a radial gradient stroke:\n\n#underline(stroke: gradient.radial( red,  blue))[This text has a radial gradient underline.]"
+  },
+  {
+    "input": "Show how to use the underline function with a conic gradient stroke.",
+    "output": "Here is an example of the underline function with a conic gradient stroke:\n\n#underline(stroke: gradient.conic( red,  blue))[This text has a conic gradient underline.]"
+  },
+  {
+    "input": "Provide an example of the underline function with a linear gradient stroke and 3pt offset.",
+    "output": "Here is an example of the underline function with a linear gradient stroke and 3pt offset:\n\n#underline(stroke: gradient.linear( red,  blue), offset: 3pt)[This text has a linear gradient underline with 3pt offset.]"
+  },
+  {
+    "input": "Give an example of the underline function with a radial gradient stroke and evade set to true.",
+    "output": "Here is an example of the underline function with a radial gradient stroke and evade set to true:\n\n#underline(stroke: gradient.radial( red,  blue), evade: true)[This text has a radial gradient underline with evasion enabled.]"
+  },
+  {
+    "input": "Show how to use the underline function with a conic gradient stroke and 5pt extent.",
+    "output": "Here is an example of the underline function with a conic gradient stroke and 5pt extent:\n\n#underline(stroke: gradient.conic( red,  blue), extent: 5pt)[This text has a conic gradient underline extended by 5pt.]"
+  },
+  {
+    "input": "Provide an example of the underline function with a linear gradient stroke and 2pt offset.",
+    "output": "Here is an example of the underline function with a linear gradient stroke and 2pt offset:\n\n#underline(stroke: gradient.linear( red,  blue), offset: 2pt)[This text has a linear gradient underline with 2pt offset.]"
+  },
+  {
+    "input": "Give an example of the underline function with a gradient stroke and a yellow background.",
+    "output": "Here is an example of the underline function with a gradient stroke and a yellow background:\n\n#underline(stroke: gradient.linear( red,  blue), background: true)[This text has a gradient underline behind the text.]"
+  },
+  {
+    "input": "Show how to use the underline function with a radial gradient stroke and background set to true.",
+    "output": "Here is an example of the underline function with a radial gradient stroke and background set to true:\n\n#underline(stroke: gradient.radial( red,  blue), background: true)[This text has a radial gradient underline behind the text.]"
+  },
+    {
+    "input": "Provide an example of the underline function with a red stroke and a miter join.",
+    "output": '"Here is an example of the underline function with a red stroke and a miter join:\n\n#underline(stroke: (paint: red, join: "miter"))[This text has a red underline with miter join.]"'
+  },
+  {
+    "input": "Give an example of the underline function with a blue stroke and a round cap.",
+    "output": '"Here is an example of the underline function with a blue stroke and a round cap:\n\n#underline(stroke: (paint: blue, cap: "round"))[This text has a blue underline with round cap.]"'
+  },
+  {
+    "input": "Show how to use the underline function with a green stroke and a dashed pattern.",
+    "output": "Here is an example of the underline function with a green stroke and a dashed pattern:\n\n#underline(stroke: (paint: green, dash: "dashed"))[This text has a green underline with dashed pattern.]"
+  },
+  {
+    "input": "Provide an example of the underline function with a black stroke and a 4pt thickness.",
+    "output": "Here is an example of the underline function with a black stroke and a 4pt thickness:\n\n#underline(stroke: (paint: black, thickness: 4pt))[This text has a black underline with 4pt thickness.]"
+  },
+  {
+    "input": "Give an example of the underline function with an orange stroke and a bevel join.",
+    "output": "Here is an example of the underline function with an orange stroke and a bevel join:\n\n#underline(stroke: (paint: orange, join: \"bevel\"))[This text has an orange underline with bevel join.]"
+  },
+  {
+    "input": "Show how to use the underline function with a purple stroke and a square cap.",
+    "output": "Here is an example of the underline function with a purple stroke and a square cap:\n\n#underline(stroke: (paint: purple, cap: \"square\"))[This text has a purple underline with square cap.]"
+  },
+  {
+    "input": "What are the possible variants for using the parameter cap from the stroke datatype?",
+    "output": "The possible variants for the parameter cap are:\n \"butt\"\n \"round\"\n \"square\""
+  },
+  {
+    "input": "What are the possible variants for using the parameter join from the stroke datatype?",
+    "output": "The possible variants for the parameter join are:\n \"miter\"\n \"round\"\n \"bevel\""
+  },
+  {
+    "input": "What are the possible variants for using the parameter dash from the stroke datatype?",
+    "output": "The possible variants for the parameter dash are:\n \"solid\"\n \"dotted\"\n \"densely-dotted\"\n \"loosely-dotted\"\n \"dashed\"\n \"densely-dashed\"\n \"loosely-dashed\"\n \"dash-dotted\"\n \"densely-dash-dotted\"\n \"loosely-dash-dotted\""
+  },
+  {
+    "input": "How can I set a custom hex number for an color in Typst?",
+    "output": "You can set a custom hex number as a color with the rgb function in Typst, here is an example \n rgb(\"#b1f2eb\")"
+  },
+  {
+    "input": "Show the underline function with a stroke that has following color 244cac",
+    "output": "Here is an example of the underline function with a stroke in the color 244cac:\n\n#underline(stroke: (paint: rgb(\"#b1f2eb\")))[This text has a the 244cac as color]"
+  },
+  {
+    "input": "Give me an example of the underline function that has a stroke witht the color ffffff",
+    "output": "Here is an example of the underline function with a stroke in the color ffffff:\n\n#underline(stroke: (paint: rgb(\"#b1f2eb\")))[This text has a the ffffff as color]"
+  }
+]
