@@ -44,16 +44,16 @@
     "output": "Here is an example of the underline function using the auto value for stroke and offset:\n\n#underline(stroke: auto, offset: auto)[This text has automatic underline settings.]"
   },
   {
-    "instruction": "Give an example of the underline function with evade set to false.",
-    "output": "Here is an example of the underline function with evade set to false:\n\n#underline(evade: false)[This text has underline without evasion.]"
+    "instruction": "Use the underline function with evade set to false.",
+    "output": "#underline(evade: false)[This text has underline without evasion.]"
   },
   {
     "instruction": "Provide an example of the underline function with a blue color stroke.",
     "output": "Here is an example of the underline function with a blue color stroke:\n\n#underline(stroke: blue)[This text has a blue underline.]"
   },
   {
-    "instruction": "How can I underline with an offset of 5pt.",
-    "output": "#underline(offset: 5pt)[This text has a 5pt offset.]"
+    "instruction": "Give an example of the underline function with an offset of 5pt.",
+    "output": "Here is an example of the underline function with an offset of 5pt:\n\n#underline(offset: 5pt)[This text has a 5pt offset underline.]"
   },
   {
     "instruction": "Provide an example of the underline function with an extent of 3pt.",
@@ -190,5 +190,13 @@
   {
     "instruction": "Give me an example of the underline function that has a stroke witht the color ffffff",
     "output": "Here is an example of the underline function with a stroke in the color ffffff:\n\n#underline(stroke: (paint: rgb(\"#b1f2eb\")))[This text has a the ffffff as color]"
-  }
+  },
+  {
+    "instruction": "How is the constructor of the underline function built?",
+    "output": "Here is the constructor of the underline function:\n underline(\n  stroke: auto length color gradient stroke pattern dictionary,\n  offset: autolength,\n  extent: length,\n  evade: bool,\n  background: bool,\n  content\n) -> content"
+  },
+    {
+    "instruction": "What is the underline function doing ?",
+    "output": "With the Underline function you can underline text in Typst"
+  },
 ]
