@@ -1,5 +1,37 @@
 [
   {
+    "instruction": "How can I define and call own variables in Typst?",
+    "output": "You have to write #let name = value for definition and #name for calling the variable"
+  },
+  {
+    "instruction": "Give me an example for define and calling a variable called number with value 19?",
+    "output": "#let number = 19/nCalling: #number"
+  },
+  {
+    "instruction": "Give me an example for define and calling a variable called text with value \"Hello World\" ?",
+    "output": "You have to write #let text = \"Hello World\" for definition and #text for calling"
+  },
+  {
+    "instruction": "How can I define and call an own function in Typst?",
+    "output": "You have to write following statement:\n definition: #let functionName(parameter1) = functionLogic \nCall: functionName[parameter1_value]"
+  },
+  {
+    "instruction": "Give me an example for define and calling a function, the function should be called getTextLength and should has one parameter that represents the input text, the function should return the length of this input text",
+    "output": "You can define the function like that #let getTextLength(input) = input.text.clusters().len() and for calling you can do getTextLength[here is my input text] "
+  },
+  {
+    "instruction": "How can I use the mod operator in Typst ?",
+    "output": "calc.rem(x,y) x is smaller in magnitude than y "
+  },
+  {
+    "instruction": "Give me an example of the calc.rem function",
+    "output": "Here is the example: calc.rem(400,255)"
+  },
+  {
+    "instruction": "give me and example how to use the calc.rem function for limiting a number at 255 ?",
+    "output": "For example calc.rem(300,255), this function will never return a bigger number then 255 "
+  },
+  {
     "instruction": "What is the auto data type in Typst?",
     "output": "The auto data type in Typst indicates a smart default. It has exactly one value: auto. Parameters that support the auto value have some smart default or contextual behavior. For example, setting the text direction parameter to auto lets Typst automatically determine the direction from the text language."
   },
@@ -180,16 +212,16 @@
     "output": "The possible variants for the parameter dash are:\n \"solid\"\n \"dotted\"\n \"densely-dotted\"\n \"loosely-dotted\"\n \"dashed\"\n \"densely-dashed\"\n \"loosely-dashed\"\n \"dash-dotted\"\n \"densely-dash-dotted\"\n \"loosely-dash-dotted\""
   },
   {
-    "instruction": "How can I set a custom hex number for an color in Typst?",
-    "output": "You can set a custom hex number as a color with the rgb function in Typst, here is an example \n rgb(\"#b1f2eb\")"
+    "instruction": "How can I set a custom color in Typst?",
+    "output": "You can set a custom hex number as a color with the rgb function in Typst, here is an example \n rgb(2,20,200)"
   },
   {
-    "instruction": "Show the underline function with a stroke that has following color 244cac",
-    "output": "Here is an example of the underline function with a stroke in the color 244cac:\n\n#underline(stroke: (paint: rgb(\"#b1f2eb\")))[This text has a the 244cac as color]"
+    "instruction": "Show the underline function with a stroke that has following color 33,227 and 170",
+    "output": "Here is an example of the underline function with a stroke in the color 33,227 and 170:\n\n#underline(stroke: (paint: rgb(33,227 and 170)))[This text has a the 244cac as color]"
   },
   {
-    "instruction": "Give me an example of the underline function that has a stroke witht the color ffffff",
-    "output": "Here is an example of the underline function with a stroke in the color ffffff:\n\n#underline(stroke: (paint: rgb(\"#b1f2eb\")))[This text has a the ffffff as color]"
+    "instruction": "Give me an example of the underline function that has a stroke witht the color 10 10 10",
+    "output": "Here is an example of the underline function with a stroke in the color 10 10 10:\n\n#underline(stroke: (paint: rgb(10 10 10)))[This text has a the ffffff as color]"
   },
   {
     "instruction": "How is the constructor of the underline function built?",
@@ -198,5 +230,5 @@
     {
     "instruction": "What is the underline function doing ?",
     "output": "With the Underline function you can underline text in Typst"
-  },
+  }
 ]
